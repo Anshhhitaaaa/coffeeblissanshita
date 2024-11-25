@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+.order-btn {
+    background-color: #FFD700;
+    color: #4A2C2A;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: #e5b700;
+}
+
+
+.menu-hero {
+    background-image: url('https://assets.architecturaldigest.in/photos/60083ed208ae763b9ae8542d/16:9/w_2560%2Cc_limit/fermented-coffee-beverage-brew-1366x768.jpg'); /* Replace with your coffee image */
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.menu-hero::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%; 
+    height: 40%; 
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.menu-hero h1, .menu-hero p {
+    z-index: 2;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.menu-hero h1 {
+    font-size: 48px;
+}
+
+.menu-hero p {
+    font-size: 20px;
+}
+
+.our-story {
+    padding: 50px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.our-story h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.our-story p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #555;
+}
+
+.our-values {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.our-values h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.values-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.value-item {
+    width: 45%;
+    margin-bottom: 40px;
+    padding: 20px; 
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.value-item h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.value-item p {
+    font-size: 16px;
+    color: #555;
+}

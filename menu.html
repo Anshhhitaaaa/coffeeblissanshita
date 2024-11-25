@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Coffee Bliss</title>
+    <link rel="icon" href="img/Coffee1.png" type="images/png">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">Coffee Bliss</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="order.html">Order Now</a></li>
+        </ul>
+        <a href="order.html" class="order-btn">Order Now</a>
+    </nav>
+
+    <section class="menu-hero">
+        <h1>Discover Our Menu</h1>
+        <p>From bold espressos to creamy lattes, we have the perfect cup for every coffee lover.</p>
+    </section>
+
+    <section class="menu-items">
+        <div class="menu-item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/75/88/98/taller-de-expresso-tostadores.jpg?w=1200&h=-1&s=1" alt="Espresso" class="menu-item-img">
+            <h3>Espresso</h3>
+            <p>Rich and bold coffee shot.</p>
+            <p class="menu-item-price">$2.50</p>
+            <div class="form-group">
+                <label for="espresso-quantity">Quantity:</label>
+                <input type="number" id="espresso-quantity" min="1" value="0">
+            </div>
+            <button class="add-to-cart-btn" data-name="Espresso" data-price="2.50">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://ideacdn.net/idea/li/11/myassets/blogs/blog-10.jpg?revision=1674214100" alt="Espresso" class="menu-item-img">
+            <h3>Latte</h3>
+            <p>Creamy milk and coffee blend.</p>
+            <p class="menu-item-price">$3.50</p>
+            <div class="form-group">
+                <label for="latte-quantity">Quantity:</label>
+                <input type="number" id="latte-quantity" min="1" value="0">
+            </div>
+            <button class="add-to-cart-btn" data-name="Latte" data-price="3.50">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://angelinos.com/cdn/shop/articles/How_Much_Milk_Coffee_in_a_Cappuccino.jpg?v=1701189122&width=320" alt="Espresso" class="menu-item-img">
+            <h3>Cappuccino</h3>
+            <p>Perfectly balanced foam and espresso.</p>
+            <p class="menu-item-price">$4.00</p>
+            <div class="form-group">
+                <label for="cappuccino-quantity">Quantity:</label>
+                <input type="number" id="cappuccino-quantity" min="1" value="0">
+            </div>
+            <button class="add-to-cart-btn" data-name="Cappuccino" data-price="4.00">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://mocktail.net/wp-content/uploads/2022/03/homemade-Iced-Americano-recipe_1ig.jpg" alt="Espresso" class="menu-item-img">
+            <h3>Americano</h3>
+            <p>Espresso with hot water and milk.</p>
+            <p class="menu-item-price">$3.00</p>
+            <div class="form-group">
+                <label for="cappuccino-quantity">Quantity:</label>
+                <input type="number" id="cappuccino-quantity" min="1" value="0">
+            </div>
+            <button class="add-to-cart-btn" data-name="Americano" data-price="3.00">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i0.wp.com/owlbbaking.com/wp-content/uploads/2022/11/mocha-latte-recipe-Featured-Photo-Template.png?fit=1200%2C1200&ssl=1" alt="Espresso" class="menu-item-img">
+            <h3>Mocha</h3>
+            <p>Chocolatey and delicious.</p>
+            <p class="menu-item-price">$6.00</p>
+            <div class="form-group">
+                <label for="cappuccino-quantity">Quantity:</label>
+                <input type="number" id="cappuccino-quantity" min="1" value="0">
+            </div>
+            <button class="add-to-cart-btn" data-name="Mocha" data-price="6.00">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn1GnIWsd5y7kMN9G1s5dn9gAfsaRKLcJyDA&s" alt="Espresso" class="menu-item-img">
+            <h3>Flat White</h3>
+            <p>Espresso with velvety milk.</p>
+            <p class="menu-item-price">$4.00</p>
+            <div class="form-group">
+                <label for="cappuccino-quantity">Quantity:</label>
+                <input type="number" id="cappuccino-quantity" min="1" value="0">
+            </div>
+            <button class="add-to-cart-btn" data-name="Flat White" data-price="4.00">Add to Cart</button>
+        </div>
+        
+    </section>
+
+    <section class="menu-items">
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM2NYtUOhGydmy5w9velG-KWHN9rNlzStciDCQtjGqLK8lgGRK9HSfAVtbulna-5xKgKY&usqp=CAU" alt="Espresso" class="menu-item-img">
+            <h3>Breve</h3>
+            <p>Perfectly balanced foam and espresso.</p>
+            <p class="menu-item-price">$10.00</p>
+            <div class="form-group">
+                <label for="cappuccino-quantity">Quantity:</label>
+                <input type="number" id="cappuccino-quantity" min="1" value="0">
+            </div>
+            <button class="add-to-cart-btn" data-name="Breve" data-price="4.00">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://thetastetable.com/img/RistrettoCafe.jpg" alt="Espresso" class="menu-item-img">
+            <h3>Ristretto</h3>
+            <p>Using the same amount of ground coffee but half the water.</p>
+            <p class="menu-item-price">$8.00</p>
+            <div class="form-group">
+                <label for="cappuccino-quantity">Quantity:</label>
+                <input type="number" id="cappuccino-quantity" min="1" value="0">
+            </div>
+            <button class="add-to-cart-btn" data-name="Ristretto" data-price="3.00">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://www.thehungrybites.com/wp-content/uploads/2023/06/coffee-ice-cream-frappe-frappuccino-feat.jpg" alt="Espresso" class="menu-item-img">
+            <h3>Frappe</h3>
+            <p>Made from spray-dried instant coffee, water, sugar, and milk.</p>
+            <p class="menu-item-price">$6.00</p>
+            <div class="form-group">
+                <label for="cappuccino-quantity">Quantity:</label>
+                <input type="number" id="cappuccino-quantity" min="1" value="0">
+            </div>
+            <button class="add-to-cart-btn" data-name="Frappe" data-price="6.00">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://www.acouplecooks.com/wp-content/uploads/2021/08/Cortado-004s.jpg" alt="Espresso" class="menu-item-img">
+            <h3>Cortado</h3>
+            <p>Espresso mixed with a equal amount of warm milk.</p>
+            <p class="menu-item-price">$6.00</p>
+            <div class="form-group">
+                <label for="cappuccino-quantity">Quantity:</label>
+                <input type="number" id="cappuccino-quantity" min="1" value="0">
+            </div>
+            <button class="add-to-cart-btn" data-name="Cortado" data-price="4.00">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://www.acouplecooks.com/wp-content/uploads/2020/10/how-to-make-a-macchiato-003s.jpg" alt="Espresso" class="menu-item-img">
+            <h3>Macchiato</h3>
+            <p>A small amount of steamed milk or foam on top.</p>
+            <p class="menu-item-price">$8.50</p>
+            <div class="form-group">
+                <label for="espresso-quantity">Quantity:</label>
+                <input type="number" id="espresso-quantity" min="1" value="0">
+            </div>
+            <button class="add-to-cart-btn" data-name="Macchiato" data-price="2.50">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://sakiproducts.com/cdn/shop/articles/What-is-Turkish-Coffee-Thumbnail_640x640.jpg?v=1656428495" alt="Espresso" class="menu-item-img">
+            <h3>Turkish coffee</h3>
+            <p>A dense and rich coffee that is served in small cups.</p>
+            <p class="menu-item-price">$4.90</p>
+            <div class="form-group">
+                <label for="cappuccino-quantity">Quantity:</label>
+                <input type="number" id="cappuccino-quantity" min="1" value="0">
+            </div>
+            <button class="add-to-cart-btn" data-name="Turkish coffee" data-price="7.90">Add to Cart</button>
+        </div>
+        
+    </section>
+
+    <script>
+        document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const itemName = button.getAttribute('data-name');
+                const itemPrice = parseFloat(button.getAttribute('data-price'));
+                const quantity = parseInt(button.previousElementSibling.querySelector('input').value);
+
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+                const existingItem = cart.find(item => item.name === itemName);
+                if (existingItem) {
+                    existingItem.quantity += quantity;
+                } else {
+                    cart.push({ name: itemName, price: itemPrice, quantity: quantity });
+                }
+
+                localStorage.setItem('cart', JSON.stringify(cart));
+
+                alert(`${quantity} x ${itemName} added to cart!`);
+            });
+        });
+
+    </script>
+
+</body>
+</html>

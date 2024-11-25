@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+.order-btn {
+    background-color: #FFD700;
+    color: #4A2C2A;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: #e5b700;
+}
+
+.menu-hero {
+    background-image: url('https://www.forestessentialsindia.com/blog/wp-content/uploads/2020/02/Coffee-Bean-Extract.png');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.menu-hero::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%; 
+    height: 40%; 
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.menu-hero h1, .menu-hero p {
+    z-index: 2;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.menu-hero h1 {
+    font-size: 36px;
+}
+
+.menu-hero p {
+    font-size: 20px;
+}
+
+.menu-section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.menu-heading {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.menu-items {
+    display: flex; 
+    overflow-x: auto;
+    justify-content: space-evenly; 
+    gap: 20px; 
+    padding: 0 90px;
+    margin-top: 1%;
+}
+
+.menu-item {
+    width: 100%; 
+    height: 100%; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box; 
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.menu-item img {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px; 
+    margin-bottom: 15px;
+}
+
+.menu-item h3, .menu-item p, .menu-item span {
+    text-align: center; 
+    margin: 5px 0; 
+}
+
+.menu-item .form-group {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 90%; 
+    margin: 10px 0; 
+}
+
+.menu-item .form-group label {
+    font-weight: bold; 
+    margin-right: 10px; 
+}
+
+.menu-item .form-group input {
+    width: 60%; 
+    padding: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+.menu-item .add-to-cart-btn {
+    width: 90%; 
+    padding: 10px; 
+    background-color: #a56d31; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer;
+    margin-top: 15px; 
+}
+
+.menu-item .add-to-cart-btn:hover {
+    background-color: #6c3813; 
+}
+
+
+.menu-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px; /* Space between title and description */
+}
+
+.menu-item p {
+    font-size: 16px;
+    margin-bottom: 15px; /* Space between description and input */
+}
+
+.menu-item input[type="number"] {
+    width: 80%; /* Input field width */
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space below input */
+}
+
+.add-to-cart-btn {
+    background-color: #5c4e4e; /* Dark brown for Add to Cart button */
+    color: #fff; /* White text */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #3f3333; /* Darker brown on hover */
+}
+
+/* Order Section Styles */
+.order-section {
+    padding: 50px 0;
+}
+
+.order-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.order-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Centering the items */
+}
+
+.order-section ul li {
+    font-size: 20px; /* Font size for items in the order */
+    margin: 10px 0; /* Space between items */
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px; /* Space between form fields */
+}
+
+.form-group label {
+    display: block; /* Block label */
+    font-weight: bold; /* Bold labels */
+}
+
+.form-group input {
+    width: 100%; /* Full width inputs */
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: default;
+}
+
+button[type="submit"] {
+    background-color: #5c4e4e; /* Dark brown for submit button */
+    color: #fff; /* White text */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #3f3333; /* Darker brown on hover */
+}
